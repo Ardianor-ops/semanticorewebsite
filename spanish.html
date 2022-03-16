@@ -8,12 +8,15 @@
            background: #F7CAC9;
            height:100vh;
            width: 100vh;
+           padding-left: 50%;
+           padding-right: 50%;
+           text-align: center;
+           overflow-x: hidden;
          }
          embed {
-            padding: 100px;
             width: 100vh;
             height: 100vh;
-            margin: 0 auto;
+            overflow-x: hidden;
          }
          .center {
            text-align: center;
@@ -28,14 +31,12 @@
   </head>
 
   <body>
-  <h1 class = "center">Placeholder for Spanish Embedding</h1>
+  <h1 class = "center">UMAP of Spanish Word Embeddings from FastText Clustered by HDBSCAN</h1>
   <p class = "center_small"> This is </p>
-  <center>
       <embed
         type="text/html"
         src="TranslatedDFs\SpanishViz.html"
        >
       </embed>
-  </center>
   </body>
 </html>
