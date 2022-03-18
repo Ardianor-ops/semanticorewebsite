@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Core German</title>
+  <style>
+    body {
+      background: white;
+      height: 100vh;
+      width: 100vh;
+      margin: 0 auto;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100vh;
+      overflow-x: hidden;
+      border: None;
+    }
+
+    .center {
+      text-align: center;
+      color: Black;
+    }
+
+    .center_small {
+      text-align: center;
+      color: black;
+      font-size: 15px
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="center">UMAP of German Word Embeddings from FastText Clustered by HDBSCAN</h1>
+  <p class="center_small"> To get a better understanding of the relationship between Noun Class and Lexical semantics in German, <br>
+    choose a cluster of nouns from the drop-down menu and use the tools on the side to zoom in on the dots <br>
+    colored by their gender and hover over them to get their translations.
+  </p>
+  <p class="center_small"> <b>Note:</b>
+    <u>The nouns were translated using Google Translate and therefore there are cases of mistranslation <br>
+      The encoding and clustering of the word embeddings was completely separate from this process.</u>
+  </p>
+  <div>
+    <iframe type="text/html" src="TranslatedDFs/TranslatedGerman.html"> </iframe>
+  </div>
+</body>
+
+</html>
