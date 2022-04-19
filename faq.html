@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Semantic Core Frequently Asked Questions</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<h1>Frequently Asked Questions</h1>
+
+<body>
+  <p> <a href="index.html">Home</a> </p>
+  <h2>How should I interpret the X and Y axes?</h2>
+  To be completely honest, you shouldn’t. The axes are a compression of 300 dimensional space down to 2 dimensions and just serve to be an intuitive way<br>
+   to place the points (words) in context with each other such that if two points are close in space, they’re close in meaning. If you wanted to try to <br>
+   interpret the axes, the best answer would be ‘a 2D representation of semantics.’ <br><br>
+  <h2>What are the clusters in the drop down menu?</h2>
+  They are groups of words that the HDBSCAN algorithm found and were decided upon based on <br>
+   being really close together in 300 dimension space. The clusters found should, therefore, <br>
+   follow some semantic rule.<br><br>
+  <h2>If words close in meaning are close together in the graph and HDBSCAN <br>
+    only puts words close in meaning together, why does my<br>
+     cluster seem to be broken into chunks?</h2>
+Don’t worry, all points in a cluster are indeed close in semantic space. Reducing dimensions can <br>
+ be very hard and there’s no good way to represent a super high dimensional space like <br>
+ ours in a way that humans can realistically interpret. The UMAP analysis was done to find <br>
+ overarching global structure in our data (which it excels at) and preserving local structures <br>
+  of the smaller clusters is nigh impossible.<br><br>
+
+<h2>How should I interpret the order of clusters?</h2>
+There is no ordering to the clusters.<br><br>
+
+<h2>What is the best way to experience this site?</h2>
+Choose a language you’re interested in, select a random cluster from the top down <br>
+menu, look at the distribution of noun classes for that cluster, use the box zoom or <br>
+scroll zoom on the right to zoom in and inspect each concept in the cluster to see <br>
+what semantic rule it appears to represent, and repeat!<br><br>
+
+</body>
+
+</html>
